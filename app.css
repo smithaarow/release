@@ -1,0 +1,280 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans');
+@import url('http://fonts.googleapis.com/css?family=Helvetica Neue');
+
+body{
+    color: rgba(0,0,0,0.8);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* ---------
+Typography
+--------- */
+h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 18px;
+}
+
+/* ---------
+States
+--------- */
+.importance-primary {
+    opacity: 0.8;
+}
+.importance-secondary {
+    opacity: 0.6;
+}
+.importance-tertiary {
+    opacity: 0.3;
+}
+.not-mobile {
+    visibility: hidden;
+}
+
+
+/* ---------
+Tables
+--------- */
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+th {
+    padding: 5px 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+th.sorting_asc {
+    background: url('public/images/up.png')  no-repeat right center;
+    background-position: right 5px center;
+    background-size: 10px 6px;
+}
+th.sorting_desc {
+    background: url('public/images/down.png')  no-repeat right center;
+    background-position: right 5px center;
+    background-size: 10px 6px;
+}
+td {
+    padding: 4px 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+tr.odd {
+    background: rgba(0,0,0,0.03);
+}
+tr:hover td {
+    background: rgba(153, 204, 238, 0.1);
+    /*background: rgba(0,0,0,0.03);*/
+}
+th:last-child,
+td:last-child {
+    text-align: right;
+}
+
+
+/* ---------
+dataTables
+--------- */
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+    display: inline-block;
+    padding: 20px 0 15px 0;
+}
+.dataTables_info {
+    opacity: .6;
+}
+.dataTables_paginate {
+    float: right;
+}
+.dataTables_filter {
+    float: right;
+}
+th.issue_key {
+    min-width: 90px;
+    max-width: 90px;
+}
+th.priority_name {
+    max-width: 100px;
+}
+
+/* Table Filter */
+.dataTables_filter input {
+    margin-left: 10px;
+    height: 25px;
+    font-size: 22px;
+}
+
+/* Pagination */
+.dataTables_paginate a {
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.dataTables_paginate a.current:hover,
+.dataTables_paginate a.current {
+    color: rgba(0,0,0,1);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.dataTables_paginate a:hover {
+    background: rgba(0,0,0,0.08);
+}
+.dataTables_paginate a.disabled {
+    display: none;
+}
+
+
+
+/* ---------
+Containers
+--------- */
+.container-full {
+    width: 95%;
+    margin: 0 auto;
+}
+.container-overflowing {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 0;
+    min-width: 100%;
+}
+
+
+
+/* ---------
+Sections
+--------- */
+.align-left {
+    display: inline-block;
+    float: left;
+}
+.align-right {
+    display: inline-block;
+    float: right;
+}
+.clearfix {
+    overflow: auto;
+}
+
+#section-header {
+    padding: 30px 0 0 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    /*background: rgba(71,176,237,1);*/
+    /*background: -moz-linear-gradient(-45deg, rgba(71,176,237,1) 0%, rgba(37,159,230,1) 100%);*/
+    /*background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(71,176,237,1)), color-stop(100%, rgba(37,159,230,1)));*/
+    /*background: -webkit-linear-gradient(-45deg, rgba(71,176,237,1) 0%, rgba(37,159,230,1) 100%);*/
+    /*background: -o-linear-gradient(-45deg, rgba(71,176,237,1) 0%, rgba(37,159,230,1) 100%);*/
+    /*background: -ms-linear-gradient(-45deg, rgba(71,176,237,1) 0%, rgba(37,159,230,1) 100%);*/
+    /*background: linear-gradient(135deg, rgba(71,176,237,1) 0%, rgba(37,159,230,1) 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47b0ed', endColorstr='#259fe6', GradientType=1 );*/
+}
+#section-main {
+    padding: 0 0 20px 0;
+}
+#section-navigation {
+    padding: 20px 0;
+}
+#section-navigation {
+
+}
+#section-navigation a {
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#section-navigation a:hover {
+    background: rgba(153, 204, 238, 0.2);
+}
+#section-navigation a.active:hover,
+#section-navigation a:active,
+#section-navigation a.active {
+    background: rgba(0,0,0,0.6);
+    color: white;
+}
+
+
+.days-on-tki {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+
+
+/* ---------
+Media Queries
+--------- */
+
+/* iPhone 6 Portrait */
+@media only screen and (max-width: 667px) {
+    section {
+        width: 100%;
+        text-align: center;
+    }
+    .mobile {
+        visibility: visible;
+    }
+    .mobile-full {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 15px 0;
+    }
+}
+
+
+/* ---------
+Tracker App Specific
+--------- */
+td {
+    border: 1px solid rgba(0,0,0,0.03);
+    vertical-align: top;
+}
+.is_shipstopper {
+    min-width: 100px;
+}
+.squad_value {
+    min-width: 100px;
+}
+.summary {
+    min-width: 400px;
+}
+.Shipment_group {
+    background: rgba(0,0,0,.7);
+}
+.Shipment_group td {
+    text-align: left;
+    border: 0;
+    color: white;
+    font-size: .7rem;
+}
+th.column-index {
+    max-width: 20px;
+}
+
+.container {
+    padding: 20px 20px;
+}
+#section2-header {
+    display: block;
+}
+#title {
+    display: inline-block;
+}
+#toggle-columns {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+#toggle-columns a {
+    padding: 5px 10px;
+}

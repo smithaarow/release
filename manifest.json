@@ -1,0 +1,16 @@
+{
+  "name": "release_tracking_app",
+  "version": "1.0.0",
+  "size": {
+    "width": 7,
+    "height": 3.25
+  },
+  "mapping": [
+    {
+      "dataSetId": "34ba7ee2-bf88-46e7-8b8b-fde9e3a4a22d",
+      "alias": "release_planning",
+      "fields": []
+    }
+  ],
+  "id": "cec375fe-5431-4eba-a842-b0ad1fe6535d"
+}
